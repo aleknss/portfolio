@@ -68,7 +68,7 @@ export default function Header() {
               header={true}
             />
             <SecondaryButton
-              onClick={() => scrollTo("#contactos")}
+              onClick={() => scrollTo("#contacto")}
               label="Contacto"
               icon={<FaPaperPlane size={16} />}
               header={true}
