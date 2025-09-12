@@ -55,6 +55,10 @@ export default function Habilidades() {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
       name: "Node.js"
     },
+    {
+      name: "Tailwind CSS",
+      icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png"
+    }
   ]
 
   return (
@@ -63,7 +67,7 @@ export default function Habilidades() {
         <div className="flex flex-col gap-4">
           <h1 className="flex gap-2 items-center font-serif font-bold text-2xl text-lime-900">
             <FaBrain />
-            Skills
+            Habilidades
           </h1>
           <div className="flex flex-col gap-4 border border-lime-700 hover:border-lime-600 card rounded py-8 px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">

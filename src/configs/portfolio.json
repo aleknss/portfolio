@@ -48,6 +48,16 @@
         "FastAPI",
         "Tailwind CSS"
       ]
+    },
+    {
+      "name": "Notas Drag'n'Drop",
+      "link": "https://github.com/aleknss/notas",
+      "logo": "dnd",
+      "description": "Proyecto de prueba para aprender a usar drag and drop con la librería de React dnd-kit. Funcionalidades esperadas como guardado de notas, edición, borrado, etc. Actualmente en desarrollo.",
+      "skills": [
+        "React",
+        "Tailwind CSS"
+      ]
     }
   ],
   "experience": [

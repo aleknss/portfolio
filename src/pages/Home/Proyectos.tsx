@@ -3,6 +3,7 @@ import profile from "../../configs/portfolio.json";
 import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
 import Arduino from "../../assets/arduino.jpg";
 import Ordenna from "../../assets/ordenna.jpg";
+import DnD from "../../assets/dnd.png";
 
 export default function Proyectos() {
   return (
@@ -25,6 +26,8 @@ export default function Proyectos() {
                       ? Arduino
                       : project.logo === "ordenna"
                       ? Ordenna
+                      : project.logo === "dnd"
+                      ? DnD
                       : project.logo
                   }
                   alt="logo"
@@ -38,6 +41,7 @@ export default function Proyectos() {
                     <a
                       href={project.link}
                       className="text-sm text-lime-600 hover:underline"
+                      target="_blank"
                     >
                       {project.link}
                     </a>
@@ -47,7 +51,7 @@ export default function Proyectos() {
                     {project.skills?.map((skill) => (
                       <p
                         key={skill}
-                        className="text-[12px] border border-zinc-800 bg-lime-200 px-3 py-1 rounded-full cursor-pointer"
+                        className="text-[12px] border border-zinc-800 bg-lime-200 hover:bg-lime-300 transition-colors duration-300 ease-in-out px-3 py-1 rounded-full cursor-pointer"
                       >
                         {skill}
                       </p>
