@@ -5,6 +5,7 @@ interface ButtonProps {
   href?: string;
   onClick?: () => void;
   icon?: ReactNode;
+  header?: boolean;
 }
 
 export function PrimaryButton({ label, icon, href }: ButtonProps) {
@@ -28,14 +29,14 @@ export function PrimaryButton({ label, icon, href }: ButtonProps) {
   );
 }
 
-export function SecondaryButton({ label, icon, href, onClick }: ButtonProps) {
+export function SecondaryButton({ label, icon, href, onClick, header = false }: ButtonProps) {
   return href ? (
     <a
       href={href} 
       className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-lime-700 hover:text-lime-600 transition-colors duration-300 ease-in-out"
     >
       {icon}
-      {label}
+      <span className={`${header ? "hidden md:block" : ""}`}>{label}</span>
     </a>
   ) : (
     <button
@@ -43,7 +44,7 @@ export function SecondaryButton({ label, icon, href, onClick }: ButtonProps) {
       className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-lime-700 hover:text-lime-600 transition-colors duration-300 ease-in-out"
     >
       {icon}
-      {label}
+      <span className={`${header ? "hidden lg:block" : ""}`}>{label}</span>
     </button>
   );
 }

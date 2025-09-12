@@ -5,7 +5,7 @@ import {
   FaHome,
   FaPaperPlane,
 } from "react-icons/fa";
-import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { SecondaryButton } from "../components/Button";
 import { GiPineTree } from "react-icons/gi";
 import Wrapper from "./Wrapper";
@@ -40,32 +40,38 @@ export default function Header() {
               onClick={() => scrollTo("#bio")}
               label="Bio"
               icon={<FaHome size={16} />}
+              header={true}
             />
             <SecondaryButton
               onClick={() => scrollTo("#datosacademicos")}
               label="Datos Académicos"
               icon={<FaGraduationCap size={16} />}
+              header={true}
             />
             <SecondaryButton
               onClick={() => scrollTo("#proyectos")}
               label="Proyectos"
               icon={<AiOutlineFundProjectionScreen size={16} />}
+              header={true}
             />
             <SecondaryButton
               onClick={() => scrollTo("#experiencia")}
               label="Experiencia"
               icon={<FaAward size={16} />}
+              header={true}
             />
 
             <SecondaryButton
               onClick={() => scrollTo("#habilidades")}
               label="Habilidades"
               icon={<FaBrain size={16} />}
+              header={true}
             />
             <SecondaryButton
               onClick={() => scrollTo("#contactos")}
               label="Contacto"
               icon={<FaPaperPlane size={16} />}
+              header={true}
             />
           </div>
         </div>
