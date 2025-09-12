@@ -43,9 +43,9 @@ export default function Header() {
               header={true}
             />
             <SecondaryButton
-              onClick={() => scrollTo("#datosacademicos")}
-              label="Datos Académicos"
-              icon={<FaGraduationCap size={16} />}
+              onClick={() => scrollTo("#experiencia")}
+              label="Experiencia"
+              icon={<FaAward size={16} />}
               header={true}
             />
             <SecondaryButton
@@ -55,12 +55,11 @@ export default function Header() {
               header={true}
             />
             <SecondaryButton
-              onClick={() => scrollTo("#experiencia")}
-              label="Experiencia"
-              icon={<FaAward size={16} />}
+              onClick={() => scrollTo("#datosacademicos")}
+              label="Datos Académicos"
+              icon={<FaGraduationCap size={16} />}
               header={true}
             />
-
             <SecondaryButton
               onClick={() => scrollTo("#habilidades")}
               label="Habilidades"
