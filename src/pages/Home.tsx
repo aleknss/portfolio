@@ -8,12 +8,12 @@ import Contacto from "./Home/Contacto";
 export default function Home() {
   return (
     <div id="home" className="w-full">
-        <Bio />
-        <Educacion />
-        <Proyectos />
-        <Experiencia />
-        <Habilidades />
-        <Contacto />
+      <Bio />
+      <Experiencia />
+      <Proyectos />
+      <Educacion />
+      <Habilidades />
+      <Contacto />
     </div>
   );
 }

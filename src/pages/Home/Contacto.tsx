@@ -20,18 +20,25 @@ export default function Contacts() {
               Contacto
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-              <a href={`mailto:${profile.contacts.email}`} className="flex items-center gap-4 text-lime-100 hover:text-lime-200">
-                  <FaEnvelope size={20} className="text-lime-300" />
-                  {profile.contacts.email}
+              <a
+                href={`mailto:${profile.contacts.email}`}
+                className="flex items-center gap-4 text-lime-100 hover:text-lime-200"
+              >
+                <FaEnvelope size={20} className="text-lime-300" />
+                {profile.contacts.email}
               </a>
-              <a href={`tel:${profile.contacts.phone}`} className="flex items-center gap-4 text-lime-100 hover:text-lime-200">
-                  <FaPhone size={20} className="text-lime-300" />
-                  {profile.contacts.phone}
+              <a
+                href={`tel:${profile.contacts.phone}`}
+                className="flex items-center gap-4 text-lime-100 hover:text-lime-200"
+              >
+                <FaPhone size={20} className="text-lime-300" />
+                {profile.contacts.phone}
               </a>
               <a
                 className="flex items-center gap-4 text-lime-100 hover:text-lime-200"
                 href={profile.contacts.twitter}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaTwitter size={20} className="text-lime-300" />
                 {profile.contacts.twitter}
@@ -40,6 +47,7 @@ export default function Contacts() {
                 href={profile.contacts.linkedin}
                 className="flex items-center gap-4 text-lime-100 hover:text-lime-200"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin size={20} className="text-lime-300" />
                 {profile.contacts.linkedin}
@@ -48,6 +56,7 @@ export default function Contacts() {
                 href={profile.contacts.github}
                 className="flex items-center gap-4 text-lime-100 hover:text-lime-200"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaGithub size={20} className="text-lime-300" />
                 {profile.contacts.github}

@@ -1,9 +1,9 @@
 import Wrapper from "../../layouts/Wrapper";
 import profile from "../../configs/portfolio.json";
-import { AiOutlineFundProjectionScreen } from 'react-icons/ai';
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import Arduino from "../../assets/arduino.jpg";
 import Ordenna from "../../assets/ordenna.jpg";
-import DnD from "../../assets/dnd.png";
+import DnD from "../../assets/dnd.jpg";
 
 export default function Proyectos() {
   return (
@@ -42,6 +42,7 @@ export default function Proyectos() {
                       href={project.link}
                       className="text-sm text-lime-600 hover:underline"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {project.link}
                     </a>

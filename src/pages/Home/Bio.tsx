@@ -11,7 +11,7 @@ export default function Bio() {
           <p className="w-full 2xl:w-2/3">{profile.bio}</p>
         </div>
         <div className="flex mt-4 gap-4">
-          <PrimaryButton href="#contacto" label="¡Contacta conmigo!" />
+          <PrimaryButton href="#contacto" label="Contacta conmigo" />
           <SecondaryButton href={profile.meetingLink} label="¿Quieres una reunión?" />
         </div>
       </Wrapper>
