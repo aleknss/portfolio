@@ -5,43 +5,16 @@ html {
     scroll-behavior: smooth;
 }
 
+.card {
+  transition: all 0.3s ease;
+}
 
+.card:hover {
+  box-shadow: 0 10px 20px -15px #324500;
+}
 
 @theme {
   --font-serif: "EB Garamond", sans-serif;
   --font-sans: "Open Sans", sans-serif;
 
-    --color-olive-100: #dce2c6;
-    --color-olive-200: #bfc89e;
-    --color-olive-300: #a1ae76;
-    --color-olive-400: #7f8f4f;
-    --color-olive-500: #606c38;
-    --color-olive-600: #4a552b;
-
-    --color-forest-100: #cfd3c2;
-    --color-forest-200: #a9b08f;
-    --color-forest-300: #839d5c;
-    --color-forest-400: #5c7a3a;
-    --color-forest-500: #283618;
-    --color-forest-600: #1e290f;
-
-    --color-sand-100: #ffffff;
-    --color-sand-200: #fffde9;
-    --color-sand-300: #fefae0;
-    --color-sand-400: #f2eecb;
-    --color-sand-500: #e6e2b6;
-    --color-sand-600: #cfcba0;
-
-    --color-melon-100: #fbe9d5;
-    --color-melon-200: #f3d1a8;
-    --color-melon-300: #eab97b;
-    --color-melon-400: #dda15e;
-    --color-melon-500: #c78f52;
-    --color-melon-600: #a7743f;
-
-    --color-rust-100: #f2d6c0;
-    --color-rust-200: #e3b08a;
-    --color-rust-300: #d48a54;
-    --color-rust-400: #bc6c25;
-    --color-rust-500: #a45f21;
 }

@@ -27,16 +27,6 @@
     }
   },
   "meetingLink": "https://meet.google.com",
-  "skills": {
-    "languages": [
-      "JavaScript"
-    ],
-    "frameworks": [
-      "React",
-      "Next.js",
-      "Nest.js"
-    ]
-  },
   "projects": [
     {
       "name": "Lámpara autosuficiente y automatizada",
@@ -55,70 +45,34 @@
       "description": "Ordenna es un sistema de gestión de inventarios automático, accesible y de bajo coste, desarrollado como Trabajo de Fin de Grado. Utiliza una ESP32-CAM que toma fotos cenitales periódicas de estanterías donde los artículos están marcados con pegatinas de colores (🔴🟡🔵). Una aplicación en Python con OpenCV analiza cada imagen para detectar, contar y clasificar los productos, almacenando los resultados de forma estructurada en una base de datos. La información se muestra en una web con gráficos y acceso por usuarios para clientes. Está pensado para adaptarse desde almacenes de empresa hasta una despensa doméstica.",
       "skills": [
         "React",
-        "Python",
+        "FastAPI",
         "Tailwind CSS"
       ]
     }
   ],
   "experience": [
     {
-      "from": 1730347070000,
-      "to": 1740347070445,
-      "company": "Microsft",
-      "role": "Senior Software Engineer",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/MSFT.webp",
+      "from": 1709251200000,
+      "to": 1717200000000,
+      "company": "Standard Profil",
+      "role": "Desarrollador de Aplicaciones Web",
+      "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D286585020687520&f=1&nofb=1&ipt=0a56f91348eef696876641ff517dd902cd4f1ba0abb72de201e573fe1ad97256",
       "descriptions": [
-        "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
-        "Lorem Ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "Lorem Ipsum ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Desarrollo de aplicaciones web de gestión interna y visualización/control de archivos con ASP.NET AJAX.",        
+        "Manejo y control de conexiones de bases de datos con SQL Server.",
+        "Trabajo en equipo en proyectos duales."
       ]
     },
     {
-      "from": 1730347070000,
-      "to": 1740347070445,
-      "company": "Microsft",
-      "role": "Senior Software Engineer",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/GOOG.webp",
+      "from": 1735689600000,
+      "to": 1743446400000,
+      "company": "Standard Profil",
+      "role": "Desarrollador de Aplicaciones Web",
+      "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D286585020687520&f=1&nofb=1&ipt=0a56f91348eef696876641ff517dd902cd4f1ba0abb72de201e573fe1ad97256",
       "descriptions": [
-        "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
-        "Lorem Ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "Lorem Ipsum ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      ]
-    },
-    {
-      "from": 1730347070000,
-      "to": 1740347070445,
-      "company": "Nvidia",
-      "role": "Senior Software Engineer",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/NVDA.webp",
-      "descriptions": [
-        "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
-        "Lorem Ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "Lorem Ipsum ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      ]
-    },
-    {
-      "from": 1730347070000,
-      "to": 1740347070445,
-      "company": "Tesla",
-      "role": "Senior Software Engineer",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/TSLA.webp",
-      "descriptions": [
-        "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
-        "Lorem Ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "Lorem Ipsum ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-      ]
-    },
-    {
-      "from": 1730347070000,
-      "to": 1740347070445,
-      "company": "Oracle",
-      "role": "Senior Software Engineer",
-      "logo": "https://companiesmarketcap.com/img/company-logos/64/ORCL.webp",
-      "descriptions": [
-        "Lorem Ipsum dolor sit amet, consectetur adipiscing elit.",
-        "Lorem Ipsum sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-        "Lorem Ipsum ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "Desarrollo de sistema de llamadas andon a tiempo real con ASP.NET AJAX e Ignition.",
+        "Digitalización de procesos tradicionales de partes de trabajo.",
+        "Plantilla de visualización de datos con lógica y de diseño de prensas mecánicas."
       ]
     }
   ]

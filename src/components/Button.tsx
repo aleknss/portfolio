@@ -11,7 +11,7 @@ export function PrimaryButton({ label, icon, href }: ButtonProps) {
   return href ? (
     <a
       className=
-        "flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-zinc-950 hover:text-zinc-700 bg-olive-300 rounded"
+        "flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-white bg-lime-700 hover:bg-lime-600 rounded transition-colors duration-300 ease-in-out"
       href={href}
     >
       {icon}
@@ -20,7 +20,7 @@ export function PrimaryButton({ label, icon, href }: ButtonProps) {
   ) : (
     <button
       className=
-        "flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-zinc-950 hover:text-zinc-700 bg-olive-300 rounded"
+        "flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-white bg-lime-700 hover:bg-lime-600 rounded transition-colors duration-300 ease-in-out"
     >
       {icon}
       {label}
@@ -31,8 +31,8 @@ export function PrimaryButton({ label, icon, href }: ButtonProps) {
 export function SecondaryButton({ label, icon, href, onClick }: ButtonProps) {
   return href ? (
     <a
-      href={href}
-      className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-forest-600 hover:text-forest-500"
+      href={href} 
+      className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-lime-700 hover:text-lime-600 transition-colors duration-300 ease-in-out"
     >
       {icon}
       {label}
@@ -40,7 +40,7 @@ export function SecondaryButton({ label, icon, href, onClick }: ButtonProps) {
   ) : (
     <button
       onClick={onClick}
-      className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-forest-600 hover:text-forest-500"
+      className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-lime-700 hover:text-lime-600 transition-colors duration-300 ease-in-out"
     >
       {icon}
       {label}

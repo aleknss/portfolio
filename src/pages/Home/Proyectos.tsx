@@ -9,15 +9,15 @@ export default function Proyectos() {
     <div id="proyectos" className="w-full">
       <Wrapper>
         <div className="flex flex-col gap-4">
-          <p className="flex gap-2 items-center font-serif text-forest-600 font-bold text-2xl">
+          <h1 className="flex gap-2 items-center font-serif text-lime-900 font-bold text-2xl">
             <AiOutlineFundProjectionScreen />
             Proyectos
-          </p>
+          </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {profile.projects.map((project) => (
               <div
                 key={project.name}
-                className="flex lg:flex-row flex-col items-center border border-forest-600 hover:border-forest-400 rounded cursor-pointer"
+                className="flex lg:flex-row flex-col items-center border border-lime-700 hover:border-lime-600 card rounded"
               >
                 <img
                   src={
@@ -28,16 +28,16 @@ export default function Proyectos() {
                       : project.logo
                   }
                   alt="logo"
-                  className="lg:w-1/3 ml-4 w-2/3 h-36 lg:h-full py-2 object-cover rounded-lg"
+                  className="lg:w-1/3 ml-4 w-2/3 h-36 lg:h-full py-2 object-cover rounded"
                 />
-                <div className="flex flex-col justify-between items-center gap-2 p-6 rounded-lg overflow-hidden">
+                <div className="flex flex-col justify-between items-center gap-6 p-6 rounded-lg overflow-hidden">
                   <div className="flex flex-col justify-start items-center gap-2">
-                    <p className="w-full text-center text-lg font-medium text-forest-600 font-serif px-4 py-2 rounded-lg">
+                    <p className="w-full text-center text-lg font-medium text-r font-serif px-4 py-2 rounded-lg text-lime-700">
                       {project.name}
                     </p>
                     <a
                       href={project.link}
-                      className="text-sm text-forest-300 hover:underline"
+                      className="text-sm text-lime-600 hover:underline"
                     >
                       {project.link}
                     </a>
@@ -47,7 +47,7 @@ export default function Proyectos() {
                     {project.skills?.map((skill) => (
                       <p
                         key={skill}
-                        className="text-[12px] border border-zinc-800 px-3 py-1 rounded-full"
+                        className="text-[12px] border border-zinc-800 bg-lime-200 px-3 py-1 rounded-full cursor-pointer"
                       >
                         {skill}
                       </p>
