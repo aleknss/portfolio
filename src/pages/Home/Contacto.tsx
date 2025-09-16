@@ -8,6 +8,8 @@ import {
   FaPhone,
   FaTwitter,
 } from "react-icons/fa";
+import { HiLocationMarker } from "react-icons/hi";
+import LR from "../../assets/LR.svg";
 
 export default function Contacts() {
   return (
@@ -61,6 +63,11 @@ export default function Contacts() {
                 <FaGithub size={20} className="text-lime-300" />
                 {profile.contacts.github}
               </a>
+              <div className="flex items-center gap-4 text-lime-100 hover:text-lime-200">
+                <HiLocationMarker size={20} className="text-lime-300" />
+                {profile.contacts.location}
+                <img src={LR} alt="Bandera de La Rioja." className="h-5" />
+              </div>
             </div>
           </div>
         </Wrapper>

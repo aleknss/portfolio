@@ -29,12 +29,12 @@ export default function Header() {
     <div className="sticky top-0 bg-white/70 backdrop-blur-xl w-full h-16 shadow-black/10 shadow-lg">
       <Wrapper>
         <div className="h-full flex justify-between items-center gap-12">
-          <a
-            href="/"
-            className="flex gap-2 items-center font-semibold font-serif text-xl text-lime-700"
-          >
-            <GiPineTree size={24} /> Alek Suso
-          </a>
+            <a
+              href="/porfolio"
+              className="flex gap-2 items-center font-semibold font-serif text-xl text-lime-700"
+            >
+              <GiPineTree size={24} /> Alek Suso
+            </a>
           <div className="flex items-center justify-start gap-1">
             <SecondaryButton
               onClick={() => scrollTo("#bio")}
