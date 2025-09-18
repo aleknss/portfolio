@@ -1,4 +1,4 @@
-import { PrimaryButton, SecondaryButton } from "../../components/Button";
+import { PrimaryButton, SecondaryButton } from "../../components/ui/Button";
 import profile from "../../configs/portfolio.json";
 import Wrapper from "../../layouts/Wrapper";
 

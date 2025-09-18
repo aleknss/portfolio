@@ -6,9 +6,10 @@ import {
   FaPaperPlane,
 } from "react-icons/fa";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
-import { SecondaryButton } from "../components/Button";
+import { SecondaryButton } from "../components/ui/Button";
 import { GiPineTree } from "react-icons/gi";
 import Wrapper from "./Wrapper";
+import { ThemeSwitch } from "../components/ThemeSwitch";
 
 export default function Header() {
   const scrollTo = (elementId: string) => {
@@ -26,7 +27,7 @@ export default function Header() {
   };
 
   return (
-    <div className="sticky top-0 bg-white/70 backdrop-blur-xl w-full h-16 shadow-black/10 shadow-lg">
+    <div className="sticky top-0 bg-white/70 dark:bg-stone-900/70 backdrop-blur-xl w-full h-16 shadow-black/10 shadow-lg">
       <Wrapper>
         <div className="h-full flex justify-between items-center gap-12">
             <a
@@ -35,6 +36,7 @@ export default function Header() {
             >
               <GiPineTree size={24} /> Alek Suso
             </a>
+          <ThemeSwitch />
           <div className="flex items-center justify-start gap-1">
             <SecondaryButton
               onClick={() => scrollTo("#bio")}
