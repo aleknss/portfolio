@@ -2,7 +2,7 @@ import { useTheme } from "../contexts/ThemeContext";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 
 export default function ThemeSwitch() {
-  const { theme, toggleTheme, setTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
   return (
       <button
         onClick={toggleTheme}

@@ -24,6 +24,10 @@ export default function Habilidades() {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
       name: "Java",
     },
+    {
+      name: "C#",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg",
+    }
   ];
 
   const frameworks = [
@@ -43,6 +47,10 @@ export default function Habilidades() {
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
       name: "Spring Boot",
     },
+    {
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      name: "Next.js",
+    }
   ];
 
   const herramientas = [
@@ -76,7 +84,7 @@ export default function Habilidades() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <div id="col1" className="flex flex-col gap-4">
                 <SecondaryTitle>Lenguajes</SecondaryTitle>
-                <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4 m-auto">
                   {languages.map((language, index) => (
                     <SkillItem
                       key={index}
@@ -88,10 +96,10 @@ export default function Habilidades() {
               </div>
               <div
                 id="col2"
-                className="lg:border-x lg:border-lime-700 flex flex-col gap-4 px-4"
+                className="lg:border-x lg:border-lime-700 flex flex-col gap-4 px-4 m-auto"
               >
                 <SecondaryTitle>Frameworks</SecondaryTitle>
-                <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4 m-auto">
                   {frameworks.map((framework, index) => (
                     <SkillItem
                       key={index}
@@ -103,7 +111,7 @@ export default function Habilidades() {
               </div>
               <div id="col3" className="flex flex-col gap-4">
                 <SecondaryTitle>Herramientas</SecondaryTitle>
-                <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4 m-auto">
                   {herramientas.map((herramienta, index) => (
                     <SkillItem
                       key={index}

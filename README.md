@@ -1,69 +1,73 @@
-# React + TypeScript + Vite
+# 🌐 Portfolio - Alek
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=fff)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub-Pages&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=222222)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mi sitio web personal desarrollado con Vite + React y TailwindCSS para mostrar mis proyectos, habilidades y experiencia profesional. Incluye toda mi experiencia, habilidades, contacto y features como modo oscuro.
 
-Currently, two official plugins are available:
+**Live**: https://aleknss.github.io/portfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Índice
+- [Tecnologías Utilizadas](#tecnologías-utilizadas)
+- [Características](#características)
+- [Instalación y Configuración](#instalación-y-configuración)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Última integración](#última-integración)
+- [Próximamente](#próximamente)
 
-## Expanding the ESLint configuration
+## Características
+- 🎨 **Diseño Responsive**: Optimizado para móviles, tablets y desktops.
+- 🌓 **Modo Oscuro/Claro**: Toggle con persistencia en `localStorage`.
+- 🔍 **SEO**: Meta tags dinámicas.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Instalación y configuración
+- Node.js 18.x o superior
+- npm o yarn
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Clonar el repositorio
+```bash
+git clone https://github.com/aleknss/portfolio.git
+cd portfolio-web
+```
+### Instalar dependencias
+```bash
+npm install
+npm run dev
+```
+Visita: http://localhost:3000
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Estructura del Proyecto
+```markdown
+portfolio-web/
+├── public/                # Assets estáticos
+│   └── index.html         # Plantilla HTML
+├── src/
+│   ├── assets/            # Assets, imágenes
+│   ├── components/        # Componentes React reutilizables
+│   │   └── ui/
+│   ├── pages/             # Parte de páginas
+│   │   ├── Home/          # Secciones de Home
+│   │   └── Home.tsx
+│   ├── contexts/          # Contextos React
+│   │   └── ThemeContext.ts
+│   ├── layouts/           # Layouts de la página
+│   └── App.tsx            # Componente principal
+├── .gitignore             # Archivos ignorados por Git
+├── package.json           # Dependencias y scripts
+└── tsconfig.json          # Configuración de TypeScript
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Última integración
+18-09-25
+¡Nuevo tema! Dedicado a aquellos usuarios que no estén acostumbrados a usar el modo claro y así evitar ese flashbang repentino. Aventura un tono más moderno en comparación al tradicional y clásico anterior.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+![Modo oscuro](./src/assets/dark-theme-portfolio.jpg)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Próximamente
+- 🌍 Traducción y showcase paralelo a inglés.
+- 🐦 Feed integrado de Twitter y Linkedin
+- 💻 Integraciones con Github
