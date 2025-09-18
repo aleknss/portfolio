@@ -5,6 +5,7 @@ import Experiencia from "./Home/Experiencia";
 import Habilidades from "./Home/Habilidades";
 import Contacto from "./Home/Contacto";
 import ThemeSwitch from "../components/ThemeSwitch";
+import Participaciones from "./Home/Participaciones";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Bio />
       <Experiencia />
       <Proyectos />
+      <Participaciones />
       <Educacion />
       <Habilidades />
       <Contacto />

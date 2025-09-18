@@ -26,7 +26,7 @@ Mi sitio web personal desarrollado con Vite + React y TailwindCSS para mostrar m
 
 ## Instalación y configuración
 - Node.js 18.x o superior
-- npm o yarn
+- npm
 
 ### Clonar el repositorio
 ```bash

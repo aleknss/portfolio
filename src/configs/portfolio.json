@@ -84,5 +84,27 @@
         "Plantilla de visualización de datos con lógica y de diseño de prensas mecánicas."
       ]
     }
+  ],
+  "participaciones": [
+    {
+      "name": "WordCamp 2025 Logroño",
+      "description": "Acudí a este evento con la ilusión y el objetivo de conocer mucha gente nueva que me abrió los ojos en contenidos de programación web y tecnología hasta diseño o marketing. Aprendí mucho en el transcurso con las conferencias y charlas con los asistentes del programa y con la comunidad de desarrolladores, no sin pasármelo bien, evidentemente.",
+      "clave": "WC"
+    },
+    {
+      "name": "Agentes del Cambio",
+      "description": "Completé el curso paralelo de Agentes del Cambio, una propuesta para la transición de la digitalización de PYMEs con un enfoque en la planificación de proyectos de desarrollo de marca empresarial digital. Aquí aprendí esencialmente a gestionar bien un plan de análisis de puntos fuertes y débiles de una empresa y acciones que deben ser tomadas para satisfacer las necesidades del cliente y poder ser competitivos.",
+      "clave": "ADC"
+    },
+    {
+      "name": "Banco de Alimentos",
+      "description": "No fue una experiencia de aprendizaje directamente relacionada con el trabajo, pero sentí una aportación indirecta a un objetivo que considero noble. Además, me ayudó a abrir la mente y poder dar un paso adelante y sacar iniciativa a la hora de mostrar propuestas y razonar.",
+      "clave": "BA"
+    },
+    {
+      "name": "Hacka Retods",
+      "description": "Una actividad de colaboración destinada a priorizar la resolución de un problema socioeconómico con la ayuda de la tecnología y la innovación. Lo fundamental de esta experiencia fue tener que idear un plan compatible con alguna o algunas de los 17 objetivos de desarrollo sostenible. Terminamos finalistas con una propuesta diferente: HydroLoop, una solución de reciclaje de agua casero.",
+      "clave": "HACK"
+    }
   ]
 }
