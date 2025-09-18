@@ -5,20 +5,24 @@ import Arduino from "../../assets/arduino.jpg";
 import Ordenna from "../../assets/ordenna.jpg";
 import DnD from "../../assets/dnd.jpg";
 
+import Title from "../../components/ui/Title";
+import SecondaryTitle from "../../components/ui/SecondaryTitle";
+import Card from "../../components/ui/Card";
+
 export default function Proyectos() {
   return (
     <div id="proyectos" className="w-full">
       <Wrapper>
         <div className="flex flex-col gap-4">
-          <h1 className="flex gap-2 items-center font-serif text-lime-900 font-bold text-2xl">
+          <Title>
             <AiOutlineFundProjectionScreen />
             Proyectos
-          </h1>
+          </Title>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {profile.projects.map((project) => (
-              <div
+              <Card
                 key={project.name}
-                className="flex lg:flex-row flex-col items-center border border-lime-700 hover:border-lime-600 card rounded"
+                className="flex lg:flex-row flex-col items-center"
               >
                 <img
                   src={
@@ -31,16 +35,16 @@ export default function Proyectos() {
                       : project.logo
                   }
                   alt="logo"
-                  className="lg:w-1/3 ml-4 w-2/3 h-36 lg:h-full py-2 object-cover rounded"
+                  className="lg:w-1/3 ml-4 my-2 w-2/3 h-36 lg:h-full object-cover rounded"
                 />
                 <div className="flex flex-col justify-between items-center gap-6 p-6 rounded-lg overflow-hidden">
                   <div className="flex flex-col justify-start items-center gap-2">
-                    <p className="w-full text-center text-lg font-medium text-r font-serif px-4 py-2 rounded-lg text-lime-700">
+                    <SecondaryTitle>
                       {project.name}
-                    </p>
+                    </SecondaryTitle>
                     <a
                       href={project.link}
-                      className="text-sm text-lime-600 hover:underline"
+                      className="text-sm text-lime-600 dark:text-lime-300 hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -52,14 +56,14 @@ export default function Proyectos() {
                     {project.skills?.map((skill) => (
                       <p
                         key={skill}
-                        className="text-[12px] border border-zinc-800 bg-lime-200 hover:bg-lime-300 transition-colors duration-300 ease-in-out px-3 py-1 rounded-full cursor-pointer"
+                        className="text-[12px] border border-zinc-800 bg-lime-200 hover:bg-lime-300 dark:bg-stone-950 dark:hover:bg-black transition-colors duration-300 ease-in-out px-3 py-1 rounded-full cursor-pointer"
                       >
                         {skill}
                       </p>
                     ))}
                   </div>
                 </div>
-              </div>
+              </Card>
             ))}
           </div>
         </div>

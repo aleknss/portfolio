@@ -1,6 +1,11 @@
 import Wrapper from "../../layouts/Wrapper";
 import { FaBrain } from "react-icons/fa";
 
+import Title from "../../components/ui/Title";
+import Card from "../../components/ui/Card";
+import SecondaryTitle from "../../components/ui/SecondaryTitle";
+import SkillItem from "../../components/ui/SkillItem";
+
 export default function Habilidades() {
   const languages = [
     {
@@ -63,29 +68,21 @@ export default function Habilidades() {
     <div id="habilidades" className="w-full">
       <Wrapper>
         <div className="flex flex-col gap-4">
-          <h1 className="flex gap-2 items-center font-serif font-bold text-2xl text-lime-900">
+          <Title>
             <FaBrain />
             Habilidades
-          </h1>
-          <div className="flex flex-col gap-4 border border-lime-700 hover:border-lime-600 card rounded py-8 px-6">
+          </Title>
+          <Card className="flex flex-col gap-4 py-8 px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <div id="col1" className="flex flex-col gap-4">
-                <h2 className="text-xl text-lime-700 font-semibold font-serif text-center">
-                  Lenguajes
-                </h2>
+                <SecondaryTitle>Lenguajes</SecondaryTitle>
                 <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
                   {languages.map((language, index) => (
-                    <div
+                    <SkillItem
                       key={index}
-                      className="flex items-center gap-4 hover:bg-lime-100 rounded p-2 cursor-pointer"
-                    >
-                      <img
-                        src={language.icon}
-                        alt={language.name}
-                        className="w-12"
-                      />
-                      <p>{language.name}</p>
-                    </div>
+                      name={language.name}
+                      icon={language.icon}
+                    />
                   ))}
                 </div>
               </div>
@@ -93,47 +90,31 @@ export default function Habilidades() {
                 id="col2"
                 className="lg:border-x lg:border-lime-700 flex flex-col gap-4 px-4"
               >
-                <h2 className="text-xl text-lime-700 font-semibold font-serif text-center">
-                  Frameworks
-                </h2>
+                <SecondaryTitle>Frameworks</SecondaryTitle>
                 <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
                   {frameworks.map((framework, index) => (
-                    <div
+                    <SkillItem
                       key={index}
-                      className="flex items-center gap-4 hover:bg-lime-100 rounded p-2 cursor-pointer"
-                    >
-                      <img
-                        src={framework.icon}
-                        alt={framework.name}
-                        className="w-12"
-                      />
-                      <p>{framework.name}</p>
-                    </div>
+                      name={framework.name}
+                      icon={framework.icon}
+                    />
                   ))}
                 </div>
               </div>
               <div id="col3" className="flex flex-col gap-4">
-                <h2 className="text-xl text-lime-700 font-semibold font-serif text-center">
-                  Herramientas
-                </h2>
+                <SecondaryTitle>Herramientas</SecondaryTitle>
                 <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
                   {herramientas.map((herramienta, index) => (
-                    <div
+                    <SkillItem
                       key={index}
-                      className="flex items-center gap-4 hover:bg-lime-100 rounded p-2 cursor-pointer"
-                    >
-                      <img
-                        src={herramienta.icon}
-                        alt={herramienta.name}
-                        className="w-12"
-                      />
-                      <p>{herramienta.name}</p>
-                    </div>
+                      name={herramienta.name}
+                      icon={herramienta.icon}
+                    />
                   ))}
                 </div>
               </div>
             </div>
-          </div>
+          </Card>
         </div>
       </Wrapper>
     </div>

@@ -9,7 +9,7 @@ function App() {
   dayjs.locale("es");
 
   return (
-    <div className="bg-white dark:bg-stone-900">
+    <div className="bg-white dark:bg-neutral-800">
       <ThemeProvider>
         <Header />
         <BrowserRouter>

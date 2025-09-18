@@ -2,6 +2,6 @@ import type { ReactNode } from "react"
 
 export default function Title({ children }: { children: ReactNode }) {
     return (
-        <h2 className="flex gap-2 items-center font-serif font-semibold text-2xl dark:text-lime-500 text-lime-900">{children}</h2>
+        <h3 className="font-serif text-center text-lime-700 dark:text-lime-400 text-xl font-medium">{children}</h3>
     )
 }

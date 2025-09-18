@@ -6,12 +6,16 @@
 html {
   scroll-behavior: smooth;
 }
+
+html.dark {
+  color:white;
+}
+
 .card {
   transition: all 0.3s ease;
 }
-.card:hover {
-  box-shadow: 0 10px 20px -15px #324500;
-}
+
+
 @theme {
   --font-serif: "EB Garamond", sans-serif;
   --font-sans: "Open Sans", sans-serif;
