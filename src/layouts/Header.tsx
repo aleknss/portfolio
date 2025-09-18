@@ -30,7 +30,7 @@ export default function Header() {
       <Wrapper>
         <div className="h-full flex justify-between items-center gap-12">
             <a
-              href="/porfolio"
+              href="/portfolio"
               className="flex gap-2 items-center font-semibold font-serif text-xl text-lime-700"
             >
               <GiPineTree size={24} /> Alek Suso
