@@ -43,7 +43,7 @@ export function SecondaryButton({
   ) : (
     <button
       onClick={onClick}
-      className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-lime-700 hover:text-lime-600 dark:text-lime-500 dark:hover:text-lime-300 transition-colors duration-300 ease-in-out"
+      className="flex justify-center items-center gap-2 text-sm px-2 sm:px-3 py-2 cursor-pointer text-lime-700 hover:text-lime-600 dark:text-lime-500 dark:hover:text-lime-300 transition-colors duration-300 ease-in-out"
     >
       {icon}
       <span className={`${header ? "hidden lg:block" : ""}`}>{label}</span>

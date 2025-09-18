@@ -9,7 +9,6 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { SecondaryButton } from "../components/ui/Button";
 import { GiPineTree } from "react-icons/gi";
 import Wrapper from "./Wrapper";
-import { ThemeSwitch } from "../components/ThemeSwitch";
 
 export default function Header() {
   const scrollTo = (elementId: string) => {
@@ -27,16 +26,15 @@ export default function Header() {
   };
 
   return (
-    <div className="sticky top-0 bg-white/60 dark:bg-neutral-900/60 backdrop-blur-xl w-full h-16 shadow-black/10 shadow-lg">
+    <div className="sticky top-0 bg-white/60 dark:bg-neutral-800/60 backdrop-blur-xl w-full h-16 shadow-black/10 shadow-lg">
       <Wrapper>
         <div className="h-full flex justify-between items-center gap-12">
-            <a
-              href="/portfolio/"
-              className="flex gap-2 items-center font-semibold font-serif text-xl text-lime-700 dark:text-lime-500"
-            >
-              <GiPineTree size={24} /> Alek Suso
-            </a>
-          <ThemeSwitch />
+          <a
+            href="/portfolio/"
+            className="flex gap-2 items-center font-semibold font-serif text-xl text-lime-700 dark:text-lime-500"
+          >
+            <GiPineTree size={24} /> Alek Suso
+          </a>
           <div className="flex items-center justify-start gap-1">
             <SecondaryButton
               onClick={() => scrollTo("#bio")}
