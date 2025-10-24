@@ -32,23 +32,7 @@ interface EducationData {
 export default function Educacion() {
   const { portfolioData, language } = useLanguage();
 
-  // Fallback to default data if portfolioData is not loaded yet
-  const educationData = (portfolioData.education || {
-    bach: {
-      logo: "",
-      modalidad: "Bachillerato de Ciencias",
-      grado: "IES Bartolomé Cossio",
-      ciudad: "Haro",
-      graduacion: "2023/06/01 00:00:00",
-    },
-    fp: {
-      logo: "",
-      modalidad: "Desarrollo de Aplicaciones Multiplataformas",
-      grado: "Sagrado Corazón Jesuitas",
-      ciudad: "Logroño",
-      graduacion: "2025/06/01 00:00:00",
-    },
-  }) as EducationData;
+  const educationData = (portfolioData.education || []) as EducationData;
 
   return (
     <div id="education" className="w-full">

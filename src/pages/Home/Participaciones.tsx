@@ -22,7 +22,7 @@ export default function Participaciones() {
   const { portfolioData, language } = useLanguage();
 
   const participacionData = (portfolioData.participaciones ||
-    []) as ParticipacionItem;
+    []) as ParticipacionItem[];
 
   return (
     <div id="attendee" className="w-full">
