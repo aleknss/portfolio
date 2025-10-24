@@ -5,85 +5,27 @@ import Title from "../../components/ui/Title";
 import Card from "../../components/ui/Card";
 import SecondaryTitle from "../../components/ui/SecondaryTitle";
 import SkillItem from "../../components/ui/SkillItem";
+import { languages, frameworks, herramientas } from "../../configs/skillsData";
+
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export default function Habilidades() {
-  const languages = [
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-      name: "TypeScript",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-      name: "JavaScript",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      name: "Python",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-      name: "Java",
-    },
-    {
-      name: "C#",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg",
-    }
-  ];
-
-  const frameworks = [
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      name: "React",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
-      name: "FastAPI",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
-      name: "Angular",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
-      name: "Spring Boot",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-      name: "Next.js",
-    }
-  ];
-
-  const herramientas = [
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-      name: "Git",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-      name: "Docker",
-    },
-    {
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      name: "Node.js",
-    },
-    {
-      name: "Tailwind CSS",
-      icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png",
-    },
-  ];
+  const { language } = useLanguage();
 
   return (
-    <div id="habilidades" className="w-full">
+    <div id="skills" className="w-full">
       <Wrapper>
         <div className="flex flex-col gap-4">
           <Title>
             <FaBrain />
-            Habilidades
+            {language === "es" ? "Habilidades" : "Skills"}
           </Title>
           <Card className="flex flex-col gap-4 py-8 px-6">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
               <div id="col1" className="flex flex-col gap-4">
-                <SecondaryTitle>Lenguajes</SecondaryTitle>
+                <SecondaryTitle>
+                  {language === "es" ? "Lenguajes" : "Languages"}
+                </SecondaryTitle>
                 <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4 m-auto">
                   {languages.map((language, index) => (
                     <SkillItem
@@ -110,7 +52,9 @@ export default function Habilidades() {
                 </div>
               </div>
               <div id="col3" className="flex flex-col gap-4">
-                <SecondaryTitle>Herramientas</SecondaryTitle>
+                <SecondaryTitle>
+                  {language === "es" ? "Herramientas" : "Tools"}
+                </SecondaryTitle>
                 <div className="p-4 grid grid-cols-1 lg:grid-cols-2 gap-4 m-auto">
                   {herramientas.map((herramienta, index) => (
                     <SkillItem

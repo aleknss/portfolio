@@ -22,7 +22,7 @@ export default function Experience() {
   const experienceData = (portfolioData.experience || []) as ExperienceItem[];
 
   return (
-    <div id="experiencia" className="w-full">
+    <div id="experience" className="w-full">
       <Wrapper>
         <div className="flex flex-col gap-4">
           <Title>

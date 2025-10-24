@@ -39,19 +39,19 @@ export default function Educacion() {
       modalidad: "Bachillerato de Ciencias",
       grado: "IES Bartolomé Cossio",
       ciudad: "Haro",
-      graduacion: "2023/06/01 00:00:00"
+      graduacion: "2023/06/01 00:00:00",
     },
     fp: {
       logo: "",
       modalidad: "Desarrollo de Aplicaciones Multiplataformas",
       grado: "Sagrado Corazón Jesuitas",
       ciudad: "Logroño",
-      graduacion: "2025/06/01 00:00:00"
-    }
+      graduacion: "2025/06/01 00:00:00",
+    },
   }) as EducationData;
 
   return (
-    <div id="datosacademicos" className="w-full">
+    <div id="education" className="w-full">
       <Wrapper>
         <div className="flex flex-col gap-4">
           <Title>

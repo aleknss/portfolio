@@ -13,10 +13,10 @@ import LR from "../../assets/LR.svg";
 import { useLanguage } from "../../contexts/LanguageContext";
 
 export default function Contacts() {
-  const { portfolioData, language } = useLanguage();
+  const { language } = useLanguage();
 
   return (
-    <div id="contacto" className="w-full">
+    <div id="contact" className="w-full">
       <div className="w-full h-full bg-lime-900">
         <Wrapper>
           <div className="flex flex-col gap-4">

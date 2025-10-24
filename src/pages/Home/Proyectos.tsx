@@ -24,7 +24,7 @@ export default function Proyectos() {
   const projectData = (portfolioData.projects || []) as ProyectItem[];
 
   return (
-    <div id="proyectos" className="w-full">
+    <div id="proyects" className="w-full">
       <Wrapper>
         <div className="flex flex-col gap-4">
           <Title>
