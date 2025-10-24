@@ -10,8 +10,11 @@ import {
 } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
 import LR from "../../assets/LR.svg";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 export default function Contacts() {
+  const { portfolioData, language } = useLanguage();
+
   return (
     <div id="contacto" className="w-full">
       <div className="w-full h-full bg-lime-900">
@@ -19,7 +22,7 @@ export default function Contacts() {
           <div className="flex flex-col gap-4">
             <p className="flex gap-2 items-center font-serif font-bold text-2xl text-lime-300">
               <FaPaperPlane />
-              Contacto
+              {language === "es" ? "Contacto" : "Contact"}
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <a

@@ -11,52 +11,39 @@
   },
   "education": {
     "bach": {
-      "logo": "https://nuevecuatrouno.com/wp-content/uploads/2024/08/ies-bartolome-cossio-haro.jpg",
-    "modalidad": "Bachillerato de Ciencias",
-    "grado": "IES Bartolomé Cossio",
-    "ciudad": "Haro",
-    "graduacion": "2023/06/01 00:00:00"
+      "modalidad": "Bachillerato de Ciencias",
+      "grado": "IES Bartolomé Cossio",
+      "ciudad": "Haro",
+      "graduacion": "2023/06/01 00:00:00"
     },
     "fp": {
-      "logo": "https://lh5.googleusercontent.com/p/AF1QipMdPcaewBGngMdPXKj6qRe5NHV9V2BSAot0poMS",
       "modalidad": "Desarrollo de Aplicaciones Multiplataformas",
       "grado": "Sagrado Corazón Jesuitas",
       "ciudad": "Logroño",
       "graduacion": "2025/06/01 00:00:00"
     }
   },
-  "meetingLink": "https://meet.google.com",
   "projects": [
     {
       "name": "Lámpara autosuficiente y automatizada",
       "link": "https://spoo.me/iot-alek",
       "logo": "arduino",
       "description": "Este proyecto surge como respuesta a una necesidad de renovar la iluminación del jardín tras unos cambios estructurales. Con interés en la eficiencia energética y el respeto al medio ambiente, busqué integrar un sistema de iluminación solar. Además, tomé la oportunidad de adentrarme en el mundo del IoT, automatizando el sistema mediante sensores y dispositivos conectados, lo que me permitió explorar nuevas tecnologías y aplicar mis conocimientos en diseño y programación de arquitecturas inteligentes.",
-      "skills": [
-        "Arduino",
-        "Electrónica"
-      ]
+      "skills": ["Arduino", "Electrónica"]
     },
     {
       "name": "Ordenna",
       "link": "https://github.com/aleknss/TFG",
       "logo": "ordenna",
       "description": "Ordenna es un sistema de gestión de inventarios automático, accesible y de bajo coste, desarrollado como Trabajo de Fin de Grado. Utiliza una ESP32-CAM que toma fotos cenitales periódicas de estanterías donde los artículos están marcados con pegatinas de colores (🔴🟡🔵). Una aplicación en FastAPI (Python) con OpenCV analiza cada imagen para detectar, contar y clasificar los productos, almacenando los resultados de forma estructurada en una base de datos. La información se muestra en una web con gráficos y acceso por usuarios para clientes. Está pensado para adaptarse desde almacenes de empresa hasta una despensa doméstica.",
-      "skills": [
-        "React",
-        "FastAPI",
-        "Tailwind CSS"
-      ]
+      "skills": ["React", "FastAPI", "Tailwind CSS"]
     },
     {
       "name": "Notas Drag'n'Drop",
       "link": "https://github.com/aleknss/notas",
       "logo": "dnd",
       "description": "Proyecto de prueba para aprender a usar drag and drop con la librería de React dnd-kit. Funcionalidades esperadas como guardado de notas, edición, borrado, etc. Actualmente en desarrollo.",
-      "skills": [
-        "React",
-        "Tailwind CSS"
-      ]
+      "skills": ["React", "Tailwind CSS"]
     }
   ],
   "experience": [
@@ -67,7 +54,7 @@
       "role": "Desarrollador de Aplicaciones Web",
       "logo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D286585020687520&f=1&nofb=1&ipt=0a56f91348eef696876641ff517dd902cd4f1ba0abb72de201e573fe1ad97256",
       "descriptions": [
-        "Desarrollo de aplicaciones web de gestión interna y visualización/control de archivos con ASP.NET AJAX.",        
+        "Desarrollo de aplicaciones web de gestión interna y visualización/control de archivos con ASP.NET AJAX.",
         "Manejo y control de conexiones de bases de datos con SQL Server.",
         "Trabajo en equipo en proyectos duales."
       ]
@@ -93,7 +80,7 @@
     },
     {
       "name": "Agentes del Cambio",
-      "description": "Completé el curso paralelo de Agentes del Cambio, una propuesta para la transición de la digitalización de PYMEs con un enfoque en la planificación de proyectos de desarrollo de marca empresarial digital. Aquí aprendí esencialmente a gestionar bien un plan de análisis de puntos fuertes y débiles de una empresa y acciones que deben ser tomadas para satisfacer las necesidades del cliente y poder ser competitivos.",
+      "description": "Completé el curso paralelo de Agentes del Cambio, una propuesta impulsada por el Gobierno de España y la Unión Europea para la transición de la digitalización de PYMEs con un enfoque en la planificación de proyectos de desarrollo de marca empresarial digital. Aquí aprendí esencialmente a gestionar bien un plan de análisis de puntos fuertes y débiles de una empresa y acciones que deben ser tomadas para satisfacer las necesidades del cliente y poder ser competitivos.",
       "clave": "ADC"
     },
     {
@@ -103,7 +90,7 @@
     },
     {
       "name": "Hacka Retods",
-      "description": "Una actividad de colaboración destinada a priorizar la resolución de un problema socioeconómico con la ayuda de la tecnología y la innovación. Lo fundamental de esta experiencia fue tener que idear un plan compatible con alguna o algunas de los 17 objetivos de desarrollo sostenible. Terminamos finalistas con una propuesta diferente: HydroLoop, una solución de reciclaje de agua casero.",
+      "description": "Terminamos finalistas con una propuesta diferente: HydroLoop, una solución de reciclaje de agua casero. Participé con un equipo en una actividad de colaboración destinada a priorizar la resolución de un problema socioeconómico con la ayuda de la tecnología y la innovación. Lo fundamental de esta experiencia fue tener que idear un plan compatible con alguna o algunas de los 17 objetivos de desarrollo sostenible.",
       "clave": "HACK"
     }
   ]

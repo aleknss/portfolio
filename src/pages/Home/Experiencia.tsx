@@ -1,23 +1,36 @@
 import Wrapper from "../../layouts/Wrapper";
-import profile from "../../configs/portfolio.json";
 import { FaAward } from "react-icons/fa";
+import { useLanguage } from "../../contexts/LanguageContext";
 import dayjs from "dayjs";
 
 import Title from "../../components/ui/Title";
 import Card from "../../components/ui/Card";
 import SecondaryTitle from "../../components/ui/SecondaryTitle";
 
+interface ExperienceItem {
+  from: number;
+  to: number | null;
+  company: string;
+  role: string;
+  logo: string;
+  descriptions: string[];
+}
+
 export default function Experience() {
+  const { portfolioData, language } = useLanguage();
+
+  const experienceData = (portfolioData.experience || []) as ExperienceItem[];
+
   return (
     <div id="experiencia" className="w-full">
       <Wrapper>
         <div className="flex flex-col gap-4">
           <Title>
             <FaAward />
-            Experiencia
+            {language === "es" ? "Experiencia" : "Experience"}
           </Title>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {profile.experience.map((experience) => (
+            {experienceData.map((experience: ExperienceItem) => (
               <Card key={experience.from} className="flex flex-col gap-6">
                 <div className="flex flex-col justify-start items-center gap-4">
                   <img
@@ -25,9 +38,7 @@ export default function Experience() {
                     alt="logo"
                     className=" max-w-18 max-h-18 w-full h-full object-cover rounded"
                   />
-                  <SecondaryTitle>
-                    {experience.company}
-                  </SecondaryTitle>
+                  <SecondaryTitle>{experience.company}</SecondaryTitle>
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
@@ -37,7 +48,9 @@ export default function Experience() {
                     <p className="text-sm text-lime-600 dark:text-lime-300">
                       {dayjs(experience.from).format("MMMM YYYY")} ~{" "}
                       {experience.to === null
-                        ? "Present"
+                        ? language === "es"
+                          ? "Presente"
+                          : "Present"
                         : dayjs(experience.to).format("MMMM YYYY")}
                     </p>
                   </div>

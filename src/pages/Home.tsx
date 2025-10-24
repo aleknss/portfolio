@@ -6,11 +6,13 @@ import Habilidades from "./Home/Habilidades";
 import Contacto from "./Home/Contacto";
 import ThemeSwitch from "../components/ThemeSwitch";
 import Participaciones from "./Home/Participaciones";
+import LanguageSwitch from "../components/LanguageSwitch";
 
 export default function Home() {
   return (
     <div id="home" className="w-full">
       <ThemeSwitch />
+      <LanguageSwitch />
       <Bio />
       <Experiencia />
       <Proyectos />

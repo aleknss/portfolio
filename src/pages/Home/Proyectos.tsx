@@ -1,25 +1,38 @@
 import Wrapper from "../../layouts/Wrapper";
-import profile from "../../configs/portfolio.json";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import Arduino from "../../assets/arduino.jpg";
 import Ordenna from "../../assets/ordenna.jpg";
-import DnD from "../../assets/dnd.jpg";
+import DnD from "../../assets/DnD.jpg";
+
+import { useLanguage } from "../../contexts/LanguageContext";
 
 import Title from "../../components/ui/Title";
 import SecondaryTitle from "../../components/ui/SecondaryTitle";
 import Card from "../../components/ui/Card";
 
+interface ProyectItem {
+  name: string;
+  link: string;
+  logo: string;
+  description: string;
+  skills: string[];
+}
+
 export default function Proyectos() {
+  const { portfolioData, language } = useLanguage();
+
+  const projectData = (portfolioData.projects || []) as ProyectItem[];
+
   return (
     <div id="proyectos" className="w-full">
       <Wrapper>
         <div className="flex flex-col gap-4">
           <Title>
             <AiOutlineFundProjectionScreen />
-            Proyectos
+            {language === "es" ? "Proyectos" : "Projects"}
           </Title>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {profile.projects.map((project) => (
+            {projectData.map((project: ProyectItem) => (
               <Card
                 key={project.name}
                 className="flex lg:flex-row flex-col items-center"
@@ -39,9 +52,7 @@ export default function Proyectos() {
                 />
                 <div className="flex flex-col justify-between items-center gap-6 p-6 rounded-lg overflow-hidden">
                   <div className="flex flex-col justify-start items-center gap-2">
-                    <SecondaryTitle>
-                      {project.name}
-                    </SecondaryTitle>
+                    <SecondaryTitle>{project.name}</SecondaryTitle>
                     <a
                       href={project.link}
                       className="text-sm text-lime-600 dark:text-lime-300 hover:underline"
