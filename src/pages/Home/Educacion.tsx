@@ -25,14 +25,17 @@ interface EducationItem {
 }
 
 interface EducationData {
-  bach: EducationItem;
-  fp: EducationItem;
+  bach?: EducationItem;
+  fp?: EducationItem;
 }
 
 export default function Educacion() {
   const { portfolioData, language } = useLanguage();
 
-  const educationData = (portfolioData.education || []) as EducationData;
+  const educationData = portfolioData.education || {
+    bach: undefined,
+    fp: undefined,
+  };
 
   return (
     <div id="education" className="w-full">
@@ -49,27 +52,31 @@ export default function Educacion() {
                 alt="university-logo"
                 className="w-2/3 h-32 object-cover mx-auto rounded-sm"
               />
-              <SecondaryTitle>{educationData.bach.grado}</SecondaryTitle>
+              <SecondaryTitle>
+                {educationData.bach?.grado || "Loading..."}
+              </SecondaryTitle>
               <p className="flex items-center gap-1 text-sm">
-                <p className="flex items-center gap-1 font-bold">
+                <span className="flex items-center gap-1 font-bold">
                   <FaMapMarkerAlt />
                   {language === "es" ? "Ciudad:" : "City:"}
-                </p>
-                {educationData.bach.ciudad}
+                </span>
+                {educationData.bach?.ciudad || "N/A"}
               </p>
               <p className="flex items-center gap-1 text-sm">
-                <p className="flex items-center gap-1 font-bold">
+                <span className="flex items-center gap-1 font-bold">
                   <FaCertificate />
                   {language === "es" ? "Grado:" : "Degree:"}
-                </p>
-                {educationData.bach.modalidad}
+                </span>
+                {educationData.bach?.modalidad || "N/A"}
               </p>
               <p className="flex items-center gap-1 text-sm">
                 <p className="flex items-center gap-1 font-bold">
                   <FaCalendar />
                   {language === "es" ? "Graduado en:" : "Graduated in:"}
                 </p>
-                {dayjs(educationData.bach.graduacion).format("MMMM YYYY")}
+                {educationData.bach?.graduacion
+                  ? dayjs(educationData.bach.graduacion).format("MMMM YYYY")
+                  : "N/A"}
               </p>
             </Card>
             <Card className="flex flex-col gap-4 py-8 px-6">
@@ -78,27 +85,31 @@ export default function Educacion() {
                 alt="university-logo"
                 className="w-2/3 h-32 object-cover mx-auto rounded-sm"
               />
-              <SecondaryTitle>{educationData.fp.grado}</SecondaryTitle>
+              <SecondaryTitle>
+                {educationData.fp?.grado || "Loading..."}
+              </SecondaryTitle>
               <p className="flex items-center gap-1 text-sm">
                 <p className="flex items-center gap-1 font-bold">
                   <FaMapMarkerAlt />
                   {language === "es" ? "Ciudad:" : "City:"}
                 </p>
-                {educationData.fp.ciudad}
+                {educationData.fp?.ciudad || "N/A"}
               </p>
               <p className="flex items-center gap-1 text-sm">
                 <p className="flex items-center gap-1 font-bold">
                   <FaCertificate />
                   {language === "es" ? "Grado:" : "Degree:"}
                 </p>
-                {educationData.fp.modalidad}
+                {educationData.fp?.modalidad || "N/A"}
               </p>
               <p className="flex items-center gap-1 text-sm">
                 <p className="flex items-center gap-1 font-bold">
                   <FaCalendar />
                   {language === "es" ? "Graduado en:" : "Graduated in:"}
                 </p>
-                {dayjs(educationData.fp.graduacion).format("MMMM YYYY")}
+                {educationData.fp?.graduacion
+                  ? dayjs(educationData.fp.graduacion).format("MMMM YYYY")
+                  : "N/A"}
               </p>
             </Card>
           </div>

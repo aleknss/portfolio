@@ -1,6 +1,5 @@
 import Header from "./layouts/Header";
 import Home from "./pages/Home";
-import dayjs from "dayjs";
 import "dayjs/locale/es";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
