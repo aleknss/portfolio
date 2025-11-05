@@ -19,7 +19,7 @@ export default function Bio() {
         </div>
         <div className="flex mt-4 gap-4">
           <PrimaryButton
-            href="#contacto"
+            href="#contact"
             label={language === "es" ? "Contacta conmigo" : "Contact me"}
           />
           <SecondaryButton

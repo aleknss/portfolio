@@ -16,19 +16,6 @@ import SecondaryTitle from "../../components/ui/SecondaryTitle";
 import { useLanguage } from "../../contexts/LanguageContext";
 import dayjs from "dayjs";
 
-interface EducationItem {
-  logo: string;
-  modalidad: string;
-  grado: string;
-  ciudad: string;
-  graduacion: string;
-}
-
-interface EducationData {
-  bach?: EducationItem;
-  fp?: EducationItem;
-}
-
 export default function Educacion() {
   const { portfolioData, language } = useLanguage();
 
