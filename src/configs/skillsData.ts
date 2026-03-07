@@ -66,4 +66,12 @@ export const herramientas: Skill[] = [
     name: "Tailwind CSS",
     icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tailwind-css-icon.png",
   },
+  {
+    name: "Better Auth",
+    icon: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F163827765%3Fs%3D200%26v%3D4&f=1&nofb=1&ipt=4412b1d4f0f0efe7bc02200cde69e13c5ae693199f331142c0e30c57bc98cecc",
+  },
+  {
+    name: "Prisma",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg",
+  }
 ];

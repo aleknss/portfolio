@@ -1,3 +1,4 @@
+import { Meta } from "react-router-dom";
 import { PrimaryButton, SecondaryButton } from "../../components/ui/Button";
 import { useLanguage } from "../../contexts/LanguageContext";
 import Wrapper from "../../layouts/Wrapper";
@@ -18,10 +19,11 @@ export default function Bio() {
           <p className="w-full 2xl:w-2/3">{portfolioData.bio}</p>
         </div>
         <div className="flex mt-4 gap-4">
+          <a href={`${import.meta.env.BASE_URL}cv.pdf`} target="_blank" rel="noopener noreferrer">
           <PrimaryButton
-            href="#contact"
-            label={language === "es" ? "Contacta conmigo" : "Contact me"}
+            label={language === "es" ? "Currículum Vitae" : "Curriculum Vitae"}
           />
+          </a>
           <SecondaryButton
             href={portfolioData.contacts?.github}
             label=""

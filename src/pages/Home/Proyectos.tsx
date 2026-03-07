@@ -2,7 +2,7 @@ import Wrapper from "../../layouts/Wrapper";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import Arduino from "../../assets/arduino.jpg";
 import Ordenna from "../../assets/ordenna.jpg";
-import DnD from "../../assets/DnD.jpg";
+import Tonela from "../../assets/tonela.jpg";
 
 import { useLanguage } from "../../contexts/LanguageContext";
 
@@ -43,8 +43,8 @@ export default function Proyectos() {
                       ? Arduino
                       : project.logo === "ordenna"
                       ? Ordenna
-                      : project.logo === "dnd"
-                      ? DnD
+                      : project.logo === "tonela"
+                      ? Tonela
                       : project.logo
                   }
                   alt="logo"
