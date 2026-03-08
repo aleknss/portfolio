@@ -1,4 +1,3 @@
-import { Meta } from "react-router-dom";
 import { PrimaryButton, SecondaryButton } from "../../components/ui/Button";
 import { useLanguage } from "../../contexts/LanguageContext";
 import Wrapper from "../../layouts/Wrapper";
