@@ -10,7 +10,7 @@
 
 Mi sitio web personal desarrollado con Vite + React y TailwindCSS para mostrar mis proyectos, habilidades y experiencia profesional. Incluye toda mi experiencia, habilidades, contacto y features como modo oscuro.
 
-**Live**: https://aleknss.github.io/portfolio/
+**Live**: https://aleknss.github.io/
 
 ## Índice
 
@@ -35,7 +35,7 @@ Mi sitio web personal desarrollado con Vite + React y TailwindCSS para mostrar m
 ### Clonar el repositorio
 
 ```bash
-git clone https://github.com/aleknss/portfolio.git
+git clone https://github.com/aleknss/aleknss.github.io
 cd portfolio-web
 ```
 
