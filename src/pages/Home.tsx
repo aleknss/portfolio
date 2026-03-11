@@ -16,7 +16,7 @@ const sectionVariants = {
     y: 0,
     transition: { duration: 0.6, ease: "easeOut" }
   }
-};
+} as const;
 
 const Section = ({ children }: { children: React.ReactNode }) => (
   <motion.div
