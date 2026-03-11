@@ -1,6 +1,6 @@
 {
   "name": "Alek",
-  "bio": "Soy un desarrollador full stack con 1 año de experiencia en entornos web. Disfruto y siento mucha motivación participando en soluciones que impliquen gran utilidad y con una muy buena presentación, como aplicaciones IoT y esencialmente diseño web, usando herramientas como React, Next.js o Python. Mi mayor inspiración es contribuir a un objetivo con perspectiva, y con ello, aprender y formalizar mi panorama profesional a un punto concreto. Con ganas de esforzarme y aprender en el transcurso, estoy dispuesto a hacer grandes cosas.",
+  "bio": "Soy un desarrollador fullstack con 1 año de experiencia en entornos web. Disfruto y siento mucha motivación participando en soluciones que impliquen gran utilidad y con una muy buena presentación esencialmente diseño web, usando herramientas como React, Next.js o Python.",
   "contacts": {
     "phone": "+34 642 80 05 89",
     "email": "aleksusob@gmail.com",
@@ -25,25 +25,25 @@
   },
   "projects": [
     {
-      "name": "Tonela",
+      "name": "Tonela: Plataforma Web de Cafetería",
       "link": "https://tonela.vercel.app/",
       "logo": "tonela",
       "description": "Página web prototipo ambientada en una cafetería. Construido un acceso al cliente con apartados como Home, Menú... Y un panel de administración que controle la información de la cafetería. Actualmente en desarrollo.",
       "skills": ["Next.js", "Better Auth", "Prisma", "Tailwind CSS"]
     },
     {
-      "name": "Lámpara autosuficiente y automatizada",
-      "link": "https://spoo.me/iot-alek",
-      "logo": "arduino",
-      "description": "Este proyecto surge como respuesta a una necesidad de renovar la iluminación del jardín tras unos cambios estructurales. Con interés en la eficiencia energética y el respeto al medio ambiente, busqué integrar un sistema de iluminación solar. Además, tomé la oportunidad de adentrarme en el mundo del IoT, automatizando el sistema mediante sensores y dispositivos conectados, lo que me permitió explorar nuevas tecnologías y aplicar mis conocimientos en diseño y programación de arquitecturas inteligentes.",
-      "skills": ["Arduino", "Electrónica"]
-    },
-    {
-      "name": "Ordenna",
+      "name": "Ordenna: Sistema de Gestión de Inventarios con Visión Artificial (TFG)",
       "link": "https://github.com/aleknss/TFG",
       "logo": "ordenna",
       "description": "Ordenna es un sistema de gestión de inventarios automático, accesible y de bajo coste, desarrollado como Trabajo de Fin de Grado. Utiliza una ESP32-CAM que toma fotos cenitales periódicas de estanterías donde los artículos están marcados con pegatinas de colores (🔴🟡🔵). Una aplicación en FastAPI (Python) con OpenCV analiza cada imagen para detectar, contar y clasificar los productos, almacenando los resultados de forma estructurada en una base de datos. La información se muestra en una web con gráficos y acceso por usuarios para clientes. Está pensado para adaptarse desde almacenes de empresa hasta una despensa doméstica.",
       "skills": ["React", "FastAPI", "Tailwind CSS"]
+    },
+    {
+      "name": "Sistema de Iluminación IoT y Eficiencia Energética",
+      "link": "https://spoo.me/iot-alek",
+      "logo": "arduino",
+      "description": "Este proyecto surge como respuesta a una necesidad de renovar la iluminación del jardín tras unos cambios estructurales. Con interés en la eficiencia energética y el respeto al medio ambiente, busqué integrar un sistema de iluminación solar. Además, tomé la oportunidad de adentrarme en el mundo del IoT, automatizando el sistema mediante sensores y dispositivos conectados, lo que me permitió explorar nuevas tecnologías y aplicar mis conocimientos en diseño y programación de arquitecturas inteligentes.",
+      "skills": ["Arduino", "Electrónica"]
     }
   ],
   "experience": [

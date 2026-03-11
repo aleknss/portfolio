@@ -1,6 +1,6 @@
 {
   "name": "Alek",
-  "bio": "I am a full-stack developer with 1 year of experience in web environments. I enjoy and feel highly motivated participating in solutions that involve great utility and excellent presentation, such as IoT applications and essentially web design, using tools like React, Next.js, or Python. My greatest inspiration is contributing to a goal with perspective, and with that, learning and formalizing my professional outlook to a concrete point. Willing to work hard and learn in the process, I am ready to accomplish great things.",
+  "bio": "I am a full-stack developer with 1 year of experience in web environments. I enjoy and feel highly motivated participating in solutions that involve great utility and excellent presentation, such as IoT applications and essentially web design, using tools like React, Next.js, or Python.",
   "contacts": {
     "phone": "+34 642 80 05 89",
     "email": "aleksusob@gmail.com",
@@ -25,11 +25,11 @@
   },
   "projects": [
     {
-      "name": "Self-sufficient and automated lamp",
-      "link": "https://spoo.me/iot-alek",
-      "logo": "arduino",
-      "description": "This project arose as a response to a need to renew garden lighting after some structural changes. With an interest in energy efficiency and environmental respect, I sought to integrate a solar lighting system. In addition, I took the opportunity to delve into the world of IoT, automating the system through sensors and connected devices, which allowed me to explore new technologies and apply my knowledge in designing and programming intelligent architectures.",
-      "skills": ["Arduino", "Electronics"]
+      "name": "Tonela: Web-based Cafeteria Platform",
+      "link": "https://tonela.vercel.app/",
+      "logo": "tonela",
+      "description": "Prototype website set in a café. Built a customer access section with sections such as Home, Menu... And an administration panel that controls the café's information. Currently under development.",
+      "skills": ["Next.js", "Better Auth", "Prisma", "Tailwind CSS"]
     },
     {
       "name": "Ordenna",
@@ -39,11 +39,11 @@
       "skills": ["React", "FastAPI", "Tailwind CSS"]
     },
     {
-      "name": "Drag'n'Drop Notes",
-      "link": "https://github.com/aleknss/notas",
-      "logo": "dnd",
-      "description": "Test project to learn how to use drag and drop with the React dnd-kit library. Expected features include note saving, editing, deletion, etc. Currently in development.",
-      "skills": ["React", "Tailwind CSS"]
+      "name": "Self-sufficient and automated lamp",
+      "link": "https://spoo.me/iot-alek",
+      "logo": "arduino",
+      "description": "This project arose as a response to a need to renew garden lighting after some structural changes. With an interest in energy efficiency and environmental respect, I sought to integrate a solar lighting system. In addition, I took the opportunity to delve into the world of IoT, automating the system through sensors and connected devices, which allowed me to explore new technologies and apply my knowledge in designing and programming intelligent architectures.",
+      "skills": ["Arduino", "Electronics"]
     }
   ],
   "experience": [

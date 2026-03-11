@@ -81,8 +81,23 @@ Traducción al inglés, no nos quedamos sujetos a un solo idioma y vamos a abrir
 
 ![Modo oscuro](./src/assets/readme/dark-theme-portfolio.jpg)
 
-## Próximamente
+## Próximamente (To-Do List)
 
-- 🌍 Traducción y showcase paralelo a inglés.
-- 🐦 Feed integrado de Twitter y Linkedin
-- 💻 Integraciones con Github
+### 🚀 Hero Section (Primera Impresión)
+- [ ] **Elemento Visual**: Añadir una foto de perfil profesional o una ilustración técnica que humanice el sitio.
+- [ ] **Badge Dinámico**: Implementar un indicador de "Disponible para trabajar" con una pequeña animación de pulso.
+- [ ] **Animaciones**: Integrar `framer-motion` para añadir efectos de entrada (fade-in up) en los títulos y botones.
+- [ ] **Efecto de Fondo**: Añadir un gradiente suave o un patrón sutil de puntos/malla detrás del texto principal.
+
+### 🎨 Presentación y UX
+- [ ] **Smooth Scrolling**: Refinar la navegación entre secciones para que sea fluida.
+- [ ] **Tarjetas de Proyectos**: Añadir efectos de hover (zoom suave) y mostrar tecnologías usadas mediante iconos en lugar de solo texto.
+- [ ] **Categorización de Skills**: Agrupar habilidades por categorías (Frontend, Backend, Herramientas) para facilitar la lectura.
+- [ ] **Sección de Testimonios**: Espacio para recomendaciones de LinkedIn o compañeros de equipo.
+- [ ] **Timeline de Experiencia**: Hacer la sección de experiencia más visual con una línea de tiempo vertical.
+
+### 🛠️ Refinamiento Técnico
+- [ ] **Optimización de Imágenes**: Convertir todos los assets de `src/assets` a formato WebP para mejorar los tiempos de carga.
+- [ ] **SEO Avanzado**: Configurar correctamente las etiquetas OpenGraph para que el portfolio se vea bien al compartir el link en redes sociales.
+- [ ] **PWA**: Convertir el sitio en una Progressive Web App para que sea instalable y funcione offline básico.
+- [ ] **Feed de GitHub**: Mostrar los últimos commits o repositorios más populares de forma dinámica.

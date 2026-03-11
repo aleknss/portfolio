@@ -18,7 +18,7 @@ export function PrimaryButton({ label, icon, href }: ButtonProps) {
       {label}
     </a>
   ) : (
-    <button className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-white bg-lime-700 hover:bg-lime-600 dark:bg-lime-500 dark:hover:bg-lime-400 rounded transition-colors duration-300 ease-in-out">
+    <button className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-white bg-lime-700 hover:bg-lime-600 dark:bg-lime-500 dark:hover:bg-lime-400 dark:text-stone-900 rounded transition-colors duration-300 ease-in-out">
       {icon}
       {label}
     </button>
