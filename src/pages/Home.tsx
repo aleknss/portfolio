@@ -7,19 +7,40 @@ import Contacto from "./Home/Contacto";
 import ThemeSwitch from "../components/ThemeSwitch";
 import Participaciones from "./Home/Participaciones";
 import LanguageSwitch from "../components/LanguageSwitch";
+import { motion } from "motion/react";
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" }
+  }
+};
+
+const Section = ({ children }: { children: React.ReactNode }) => (
+  <motion.div
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true, amount: 0.2 }}
+    variants={sectionVariants}
+  >
+    {children}
+  </motion.div>
+);
 
 export default function Home() {
   return (
     <div id="home" className="w-full">
       <ThemeSwitch />
       <LanguageSwitch />
-      <Bio />
-      <Experiencia />
-      <Proyectos />
-      <Participaciones />
-      <Educacion />
-      <Habilidades />
-      <Contacto />
+      <Section><Bio /></Section>
+      <Section><Experiencia /></Section>
+      <Section><Proyectos /></Section>
+      <Section><Participaciones /></Section>
+      <Section><Educacion /></Section>
+      <Section><Habilidades /></Section>
+      <Section><Contacto /></Section>
     </div>
   );
 }

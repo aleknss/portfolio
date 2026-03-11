@@ -57,10 +57,10 @@ export default function Educacion() {
                 {educationData.bach?.modalidad || "N/A"}
               </p>
               <p className="flex items-center gap-1 text-sm">
-                <p className="flex items-center gap-1 font-bold">
+                <span className="flex items-center gap-1 font-bold">
                   <FaCalendar />
                   {language === "es" ? "Graduado en:" : "Graduated in:"}
-                </p>
+                </span>
                 {educationData.bach?.graduacion
                   ? dayjs(educationData.bach.graduacion).format("MMMM YYYY")
                   : "N/A"}
@@ -76,24 +76,24 @@ export default function Educacion() {
                 {educationData.fp?.grado || "Loading..."}
               </SecondaryTitle>
               <p className="flex items-center gap-1 text-sm">
-                <p className="flex items-center gap-1 font-bold">
+                <span className="flex items-center gap-1 font-bold">
                   <FaMapMarkerAlt />
                   {language === "es" ? "Ciudad:" : "City:"}
-                </p>
+                </span>
                 {educationData.fp?.ciudad || "N/A"}
               </p>
               <p className="flex items-center gap-1 text-sm">
-                <p className="flex items-center gap-1 font-bold">
+                <span className="flex items-center gap-1 font-bold">
                   <FaCertificate />
                   {language === "es" ? "Grado:" : "Degree:"}
-                </p>
+                </span>
                 {educationData.fp?.modalidad || "N/A"}
               </p>
               <p className="flex items-center gap-1 text-sm">
-                <p className="flex items-center gap-1 font-bold">
+                <span className="flex items-center gap-1 font-bold">
                   <FaCalendar />
                   {language === "es" ? "Graduado en:" : "Graduated in:"}
-                </p>
+                </span>
                 {educationData.fp?.graduacion
                   ? dayjs(educationData.fp.graduacion).format("MMMM YYYY")
                   : "N/A"}

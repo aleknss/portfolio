@@ -11,11 +11,6 @@ html.dark {
   color:white;
 }
 
-.card {
-  transition: all 0.3s ease;
-}
-
-
 @theme {
   --font-serif: "EB Garamond", sans-serif;
   --font-sans: "Open Sans", sans-serif;

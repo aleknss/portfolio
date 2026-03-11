@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { motion } from "motion/react";
 
 interface ButtonProps {
   label: string;
@@ -9,19 +10,25 @@ interface ButtonProps {
 }
 
 export function PrimaryButton({ label, icon, href }: ButtonProps) {
+  const commonProps = {
+    whileHover: { scale: 1.05 },
+    whileTap: { scale: 0.95 },
+    className: "flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-white bg-lime-700 hover:bg-lime-600 dark:bg-lime-500 dark:hover:bg-lime-400 dark:text-stone-900 rounded transition-colors duration-300 ease-in-out"
+  };
+
   return href ? (
-    <a
-      className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-white bg-lime-700 hover:bg-lime-600 dark:bg-lime-500 dark:hover:bg-lime-400 dark:text-stone-900 rounded transition-colors duration-300 ease-in-out"
+    <motion.a
       href={href}
+      {...commonProps}
     >
       {icon}
       {label}
-    </a>
+    </motion.a>
   ) : (
-    <button className="flex justify-center items-center gap-2 text-sm px-3 py-2 cursor-pointer text-white bg-lime-700 hover:bg-lime-600 dark:bg-lime-500 dark:hover:bg-lime-400 dark:text-stone-900 rounded transition-colors duration-300 ease-in-out">
+    <motion.button {...commonProps}>
       {icon}
       {label}
-    </button>
+    </motion.button>
   );
 }
 
@@ -32,21 +39,27 @@ export function SecondaryButton({
   onClick,
   header = false,
 }: ButtonProps) {
+  const commonProps = {
+    whileHover: { scale: 1.05 },
+    whileTap: { scale: 0.95 },
+    className: "flex justify-center items-center gap-2 text-sm px-1 sm:px-3 py-2 cursor-pointer text-lime-700 hover:text-lime-600 dark:text-lime-500 dark:hover:text-lime-300 transition-colors duration-300 ease-in-out"
+  };
+
   return href ? (
-    <a
+    <motion.a
       href={href}
-      className="flex justify-center items-center gap-2 text-sm px-1 py-2 cursor-pointer text-lime-700 hover:text-lime-600 dark:text-lime-500 dark:hover:text-lime-300 transition-colors duration-300 ease-in-out"
+      {...commonProps}
     >
       {icon}
       <span className={`${header ? "hidden md:block" : ""}`}>{label}</span>
-    </a>
+    </motion.a>
   ) : (
-    <button
+    <motion.button
       onClick={onClick}
-      className="flex justify-center items-center gap-2 text-sm px-1 sm:px-3 py-2 cursor-pointer text-lime-700 hover:text-lime-600 dark:text-lime-500 dark:hover:text-lime-300 transition-colors duration-300 ease-in-out"
+      {...commonProps}
     >
       {icon}
       <span className={`${header ? "hidden lg:block" : ""}`}>{label}</span>
-    </button>
+    </motion.button>
   );
 }
