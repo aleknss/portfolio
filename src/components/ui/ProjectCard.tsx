@@ -28,7 +28,7 @@ function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div
-      className={`relative bg-gradient-to-br ${gradientFrom} ${gradientTo} border ${borderColor} hover:${hoverBorderColor} card p-4 hover:shadow-xl shadow-black/20 rounded flex flex-row gap-4 items-center`}
+      className={`relative bg-gradient-to-br ${gradientFrom} ${gradientTo} border ${borderColor} hover:${hoverBorderColor} card p-4 hover:shadow-xl shadow-black/20 rounded flex flex-col md:flex-row gap-4 items-center`}
     >
       <a
         href={data.link}
@@ -38,8 +38,8 @@ function ProjectCard({
       >
         <FaLink />
       </a>
-      <img src={image} alt={data.name} className="w-1/2 rounded object-cover aspect-video" />
-      <div className="flex flex-col gap-2">
+      <img src={image} alt={data.name} className="w-full md:w-1/2 rounded object-cover aspect-video" />
+      <div className="flex flex-col gap-2 w-full md:w-1/2">
         <h1 className="text-2xl mb-2 font-serif text-white">{data.name}</h1>
         <p className="text-white text-sm">{data.description}</p>
         <ul className="flex flex-wrap gap-2 text-justify">
