@@ -55,7 +55,7 @@ export default function Proyectos() {
                     <SecondaryTitle>{project.name}</SecondaryTitle>
                     <a
                       href={project.link}
-                      className="text-sm text-lime-600 dark:text-lime-300 hover:underline"
+                      className="text-sm text-accent hover:underline"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -67,7 +67,7 @@ export default function Proyectos() {
                     {project.skills?.map((skill) => (
                       <p
                         key={skill}
-                        className="text-[12px] border border-zinc-800 bg-lime-200 hover:bg-lime-300 dark:bg-stone-950 dark:hover:bg-black transition-colors duration-300 ease-in-out px-3 py-1 rounded-full cursor-pointer"
+                        className="text-[12px] border border-zinc-800 bg-primary-muted hover:bg-accent transition-colors duration-300 ease-in-out px-3 py-1 rounded-full cursor-pointer"
                       >
                         {skill}
                       </p>
