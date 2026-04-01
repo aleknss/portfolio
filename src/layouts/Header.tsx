@@ -32,7 +32,7 @@ export default function Header() {
   const { language } = useLanguage();
 
   return (
-    <div className="sticky top-0 bg-background/60 backdrop-blur-xl w-full h-16 shadow-black/10 shadow-lg z-10">
+    <div className="sticky top-0 bg-background/60 backdrop-blur-xl w-full h-16 shadow-black/10 shadow-lg z-50">
       <Wrapper>
         <div className="h-full flex justify-between items-center gap-12">
           <motion.a
@@ -47,8 +47,7 @@ export default function Header() {
             >
               <GiPineTree size={24} />
             </motion.div>
-            Alek{" "}
-            <span className="hidden sm:block">Suso</span>
+            Alek <span className="hidden sm:block">Suso</span>
           </motion.a>
           <div className="flex items-center justify-start gap-1">
             <SecondaryButton
